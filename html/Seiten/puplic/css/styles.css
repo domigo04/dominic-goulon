@@ -1,9 +1,16 @@
-/*Das ist EN-Nachweise*/
+/* Das ist Offerte */
+
 body {
   background-color: #f9fbfd;
-  font-family: futura, ;
+  font-family: Futura, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+
+/* Wichtig: Inhalt sichtbar machen */
+.section {
+  display: block;
 }
 
 .container-box {
@@ -24,6 +31,7 @@ body {
   transition: background 0.3s ease;
   cursor: pointer;
   margin-bottom: 25px;
+  color: #333;
 }
 
 .dropzone.dragover {
@@ -34,6 +42,7 @@ body {
 .checkbox-group label {
   display: block;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .btn-primary {
@@ -42,17 +51,16 @@ body {
   padding: 12px 24px;
   border-radius: 6px;
   color: white;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
   background-color: #021427;
 }
 
+
 /*Index / Startseite*/
-  
-section {
-    display: none;
-  }
+
 
   .hero {
     display: block;
@@ -109,6 +117,10 @@ section {
 }
 
 /* About */
+
+footer {
+  margin-top: auto;
+}
 
 /* Conatcs */
 
@@ -184,4 +196,12 @@ section {
 
 .contact-box button:hover {
   background-color: #0056b3;
+}
+
+/* Projekte */
+
+.text-muted {
+
+  color: #000000 !important;
+  text-align: left;
 }

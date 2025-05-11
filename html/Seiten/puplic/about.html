@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Über mich – Dominic Goulon</title>
+
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+  <main class="flex-grow-1">
+
+    <!-- ÜBER MICH -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h1 class="mb-3">Über mich</h1>
+            <p>
+              Ich bin Dominic, ein junger Wirtschaftsingenieur in Ausbildung mit einem Hintergrund in Gebäudetechnik.
+              Ich liebe es, komplexe Dinge einfach zu machen und Menschen durch Technologie zusammenzubringen.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/images/dominic.jpg" alt="Dominic Goulon" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEINE PROJEKTE -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-5 text-center">Meine Projekte</h2>
+
+        <div class="row g-4 mb-5 justify-content-center">
+
+          <!-- TikTok Video -->
+          <div class="col-md-4">
+            <a href="https://www.tiktok.com/@3planag/video/7348850991237729569" target="_blank">
+              <div class="card h-100 shadow-sm">
+                <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+                  <source src="assets/videos/tiktok-loop.mp4" type="video/mp4">
+                </video>
+                <div class="card-body">
+                  <h5 class="card-title">POV: Du bist um 17:01 Uhr noch im Büro</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- TikTok Bild 1 -->
+          <div class="col-md-4 d-none d-md-block">
+            <a href="https://www.tiktok.com/@3planag/video/7229671974564318490" target="_blank">
+              <div class="card h-100 shadow-sm">
+                <img src="assets/images/tiktok-preview-1.jpg" class="card-img-top" alt="TikTok Vorschau 1">
+                <div class="card-body">
+                  <h5 class="card-title">Werde Gebäudetechniker und bewirke was!</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- TikTok Bild 2 -->
+          <div class="col-md-4 d-none d-md-block">
+            <a href="https://www.tiktok.com/@3planag/video/7210848097654656262" target="_blank">
+              <div class="card h-100 shadow-sm">
+                <img src="assets/images/tiktok-preview-2.jpg" class="card-img-top" alt="TikTok Vorschau 2">
+                <div class="card-body">
+                  <h5 class="card-title">Elektrotechnik – nicht nur Kabelsalat</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <p class="fs-5 text-muted">
+              <strong>Idee, Dreh, Schnitt – alles von mir. So lerne ich bei jedem Video etwas dazu.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Weitere Projekte -->
+        <div class="row g-4 mb-5">
+          <!-- Projekt 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/images/projekt2.jpg" class="card-img-top" alt="Projekt bei 3-Plan">
+              <div class="card-body">
+                <h5 class="card-title">Neubau MFH, Wil</h5>
+                <p class="card-text">Gebäudetechnik-Konzept inkl. SIA-Nachweise und hydraulischer Abgleich.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIREGO -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/images/sirego-logo.png" class="card-img-top" alt="SIREGO Logo">
+              <div class="card-body">
+                <h5 class="card-title">SIREGO – Smart Investing</h5>
+                <p class="card-text">Mitgründer der Plattform für automatisierte Investitionen.</p>
+                <a href="https://sirego.ch" class="btn btn-outline-dark" target="_blank">Zur Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  </script>
+</body>
+</html>
