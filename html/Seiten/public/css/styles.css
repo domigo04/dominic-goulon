@@ -1,207 +1,126 @@
-/* Das ist Offerte */
-
+/* Allgemeine Layouts */
 body {
-  background-color: #f9fbfd;
-  font-family: Futura, sans-serif;
-  margin: 0;
-  padding: 0;
+  background: #fdfdfd;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-
-/* Wichtig: Inhalt sichtbar machen */
-.section {
-  display: block;
-}
-
-.container-box {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
-  background: #720892a1;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.dropzone {
-  border: 3px dashed #007bff;
-  padding: 40px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #eef6ff;
-  transition: background 0.3s ease;
-  cursor: pointer;
-  margin-bottom: 25px;
-  color: #333;
-}
-
-.dropzone.dragover {
-  background-color: #d0eaff;
-  border-color: #0056b3;
-}
-
-.checkbox-group label {
-  display: block;
-  margin-bottom: 10px;
-  color: #fff;
+/* Buttons */
+.btn {
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background: #3c91e6;
   border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
 }
 
 .btn-primary:hover {
-  background-color: #021427;
+  background: #3179c3;
 }
 
-
-/*Index / Startseite*/
-
-
-  .hero {
-    display: block;
-    background: linear-gradient(to right, #870db3, #1988d2);
-    padding: 100px 0;
-    color: white;
-  }
-
-  .hero-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-
-  .dropzone {
-    border: 6px dashed #007bff;
-    padding: 40px;
-    text-align: center;
-    color: #555;
-    border-radius: 10px;
-    background-color: #f0f8ff;
-    transition: background 0.3s ease;
-    cursor: pointer;
-  }
-
-  .dropzone.dragover {
-    background-color: #cce5ff;
-    border-color: #0056b3;
-  }
-
-  .checkbox-group label {
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  .btn-mehr-erfahren {
-  background-color: #043c67;
-  color: rgb(255, 255, 255);
-  padding: 12px 24px;
-  text-align: left;
-  width: 180px;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-mehr-erfahren:hover {
-  background-color: #001169;
-  color: rgb(255, 255, 255);
-
-}
-
-/* About */
-
-footer {
-  margin-top: auto;
-}
-
-/* Conatcs */
-
-
-
-.navbar {
-  background-color: rgb(255, 255, 255);
-  padding: 16px 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.nav {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-}
-
-.nav li a:hover {
-  color: #0056b3;
-}
-
-.contact-box {
-  max-width: 500px;
-  margin: 80px auto;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
-
-.contact-box input,
-.contact-box textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.contact-box button {
-  width: 100%;
-  padding: 12px;
+.btn-danger {
+  background: #f17b83;
   border: none;
-  background-color: #007bff;
+}
+
+.btn-danger:hover {
+  background: #d95f67;
+}
+
+.btn-dark {
+  background: #111;
+  border: none;
+}
+
+.btn-outline-primary {
+  border-color: #3c91e6;
+  color: #3c91e6;
+}
+
+.btn-outline-primary:hover {
+  background: #3c91e6;
+  color: #fff;
+}
+
+/* Bilder */
+.hero-image {
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+img.rounded-4 {
+  border-radius: 20px;
+}
+
+/* Mission Section */
+section.bg-gradient-rounded {
+  background: linear-gradient(90deg, #48c6ef, #6f86d6);
+  border-radius: 25px;
+  padding: 3rem 1rem;
   color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.contact-box button:hover {
-  background-color: #0056b3;
+/* Textgestaltung */
+h1, h2, h3, h4 {
+  color: #111;
 }
-
-/* Projekte */
 
 .text-muted {
-
-  color: #000000 !important;
-  text-align: left;
+  color: #666 !important;
 }
+
+/* Navbar */
+.navbar-brand img {
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+/* Containerboxen z. B. für Upload-Seite */
+.container-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* Dropzone für Uploads */
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  color: #777;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone:hover {
+  border-color: #3c91e6;
+  background-color: #f9fbff;
+}
+
+.card {
+  border-radius: 1.5rem;
+}
+
+.card .form-control {
+  border-radius: 0.75rem;
+}
+
+.btn-primary {
+  background-color: #3c91e6;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #317acc;
+}
+
